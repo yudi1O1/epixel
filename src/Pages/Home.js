@@ -69,17 +69,16 @@ function Home() {
       {/* Navbar */}
       <div className="home-container">
         <section className="navbar">
-          <a href="#" className="logo">
-            Logo
+          <a href="#">
+            <img src="/img/logo.png" alt="" />
           </a>
+
           <div className={`navlinks ${toggle ? "visible" : "hidden"}`}>
             <div className="nav-link">
-              <a href="">Features</a>
-              <a href="">Price</a>
-              <a href="" className="com">
-                Community
-              </a>
-              <a href="">Support</a>
+              <a href="#features">Features</a>
+              <a href="#price">Price</a>
+              <a href="#community">Community</a>
+              <a href="#support">Support</a>
             </div>
             <div className="btns">
               <button className="btn log">Login</button>
@@ -98,7 +97,7 @@ function Home() {
         </section>
 
         {/* Content 1 */}
-        <section className="content-1">
+        <section className="content-1" id="features">
           <div className="container">
             <h1 className="content-head">
               Snap photo and share like <br />
@@ -126,7 +125,7 @@ function Home() {
         </section>
 
         {/* Content 2 */}
-        <section className="content-2">
+        <section className="content-2" id="price">
           <div className="container">
             <div className="heading">
               <h1 className="head2">Have you ever posted on social media?</h1>
@@ -157,13 +156,12 @@ function Home() {
         </section>
 
         {/* Service Section*/}
-        <section className="stilish-photo">
+        <section className="stilish-photo" id="community">
           <div className="stilish-header">
             <h1>Make your photo more stylish</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              consequatur sed fugiat. Dicta cum itaque tempora sed autem, facere
-              perferendis?
+              consequatur sed fugiat. Dicta cum itaque tempora
             </p>
           </div>
 
@@ -202,7 +200,7 @@ function Home() {
         </section>
 
         {/* Form Section */}
-        <section className="form">
+        <section className="form" id="support">
           <div className="form-header">
             <h1>Ready to take a free trial?</h1>
             <p>
@@ -281,7 +279,7 @@ function Home() {
         {/* Footer */}
         <section className="footer">
           <div className="footer-top">
-            <a href="#">logo</a>
+            <img src="/img/logodark.png" alt="" />
             <div className="foot-half">
               <div className="foot-cont">
                 <div className="foot mobile-app">
@@ -312,8 +310,8 @@ function Home() {
                 </div>
 
                 <div className="foot-btn">
-                  <button className="btn regg">Register</button>
-                  <button className="btn logg">Log in</button>
+                  <button className="btnn regg">Register</button>
+                  <button className="btnn logg">Log in</button>
                 </div>
               </div>
             </div>

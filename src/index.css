@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
   }
 
   :root {
@@ -25,29 +26,36 @@
     background-color:var(--primary-color);
     position: fixed;
     width: 100%;
+    padding: 0rem 4rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--font-color);
-    padding: 2rem 3rem;
     z-index: 999;
     .logo{
       color: var(--font-color);
       font-size: 2rem;
     }
   }
-
+  .navbar img{
+    width: 8rem;
+    z-index: 9999;
+  }
   .navlinks{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
+    /* background-color: #19a0fa; */
+    gap: 1rem;
   
   }
   .nav-link {
     text-transform: capitalize;
-    width: 50%; 
+    min-width: 40%; 
     display: flex;
+    gap: .5rem;
     justify-content: space-around;
 
   }
@@ -68,13 +76,21 @@
     transform: scale(1.2);
     color: var(--btn-color);
   }
+  .btns{
+    display: flex;
+    gap: 1rem;
+  }
 
   .btn{
-    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    padding: 0 1rem;
+    text-align: center;
     height: 2.5rem;
     font-size: 1rem;
     border-radius: .3rem;
-    margin-right:1rem ;
   }
   .log{
     border: 1px solid var(--btn-color);
@@ -88,7 +104,9 @@
   }
 
   @media (max-width: 768px) {
-
+    .navbar{
+      padding: 0rem 2rem;
+    }
     .ham{
       display: block;
       padding: .5rem;
@@ -96,6 +114,11 @@
   }
   .fa-xmark{
       color: red;
+  }
+  .btn{
+    
+    width: 7rem;
+
   }
   .navlinks {
     flex-direction: column;
@@ -107,7 +130,6 @@
     overflow-y: hidden;
     top: 100%;
     left: 0;
-    
     transition: all .3s ease-in-out;
     
   }
@@ -120,7 +142,7 @@
     }
   }
   .btns{
-    margin-bottom: 10px;
+    margin-bottom: 4rem;
   }
   .hidden{
     height: 0;
@@ -242,7 +264,7 @@
 }
 
 /* mobile */
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   html,body{
     width: 100%;
     overflow-x: hidden;
@@ -362,7 +384,7 @@
 }
 
 /* mobile */
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   .container{
     padding: 7rem 3rem 3rem 3rem;
   }
@@ -425,6 +447,12 @@
   justify-content: center;
   gap: 4rem;
   padding: 4rem 0 6rem 0;
+
+ 
+}
+.content-img img{
+  width: 40rem;
+  height: 100vh;
 }
 
 .contSec{
@@ -529,7 +557,7 @@
   
 }
 /* mobile */
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   .content-img{
     display: flex;
     align-items: center;
@@ -723,7 +751,7 @@
   
 }
 
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   .stilish-photo{
  
     padding: 7rem 1rem 3rem 1rem;}
@@ -748,7 +776,7 @@
       color: rgb(46, 45, 45);
     }
     h1{
-      background-color: #19a0fa;
+   
       font-size: 1.5rem;
       font-weight:450;
       word-spacing: 5px;
@@ -880,7 +908,7 @@ button:hover {
   .form-header{
     padding-top: 6rem;
     h1{
-      font-size: 4vw;
+      font-size: 5vw;
       font-weight: 500;
     }
     p{
@@ -922,7 +950,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   .form-header{
     padding-top: 6rem;
     h1{
@@ -996,6 +1024,8 @@ button:hover {
   flex-direction: column;
   text-transform: capitalize;
   gap: 1rem;
+
+ 
 .regg{
   color: white;
   background-color: var(--btn-color);
@@ -1005,6 +1035,9 @@ button:hover {
   border: 2px solid var(--btn-color);
   color: var(--btn-color);
   background-color: var(--primary-color);
+}
+.btnn{
+  width: 7rem;
 }
 }
 
@@ -1140,7 +1173,7 @@ button:hover {
 
 }
 
-@media only screen and (min-width: 300px) and (max-width: 410px){
+@media only screen and (min-width: 300px) and (max-width: 430px){
   .footer-top{
     display: grid;
     grid-template-columns: 1fr;
