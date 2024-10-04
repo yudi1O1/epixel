@@ -10,6 +10,7 @@ function Home() {
 
   // Error state for handling validation errors
   const [errors, setErrors] = useState({});
+  const [toggle, setToggle] = useState(false);
 
   // Validation logic
   const validate = () => {
@@ -59,6 +60,10 @@ function Home() {
     }
   };
 
+  const ToggleEvent = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <>
       {/* Navbar */}
@@ -67,7 +72,7 @@ function Home() {
           <a href="#" className="logo">
             Logo
           </a>
-          <div className="navlinks">
+          <div className={`navlinks ${toggle ? "visible" : "hidden"}`}>
             <div className="nav-link">
               <a href="">Features</a>
               <a href="">Price</a>
@@ -81,8 +86,8 @@ function Home() {
               <button className="btn reg">Register</button>
             </div>
           </div>
-          <div class="ham active">
-            <i class="fa-solid fa-bars"></i>
+          <div className={`ham`} onClick={ToggleEvent}>
+            <i className="fa-solid fa-bars"></i>
           </div>
         </section>
 

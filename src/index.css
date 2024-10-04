@@ -104,10 +104,10 @@
     text-align: center;
     font-size: 0.8rem; 
     position: absolute;
+    overflow-y: hidden;
     top: 100%;
     left: 0;
-    height: 0;
-    overflow-y: hidden;
+    
     transition: all .3s ease-in-out;
     
   }
@@ -119,9 +119,15 @@
       padding: 1rem;
     }
   }
-
-  .activate{
-    height: 30vh;
+  .btns{
+    margin-bottom: 10px;
+  }
+  .hidden{
+    height: 0;
+    overflow-y: hidden;
+  }
+  .visible{
+    height: 40vh;
 
 }
   }
