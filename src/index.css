@@ -397,14 +397,18 @@
   }
 
   .content-head{
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight:800;
   }
 
   .content-box{
     h2{
-      font-size: 1.7rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       padding-bottom: 1rem;
+    }
+    p{
+      font-size: 1.1rem;
     }
 
   }
@@ -577,8 +581,8 @@
   
     }
     .head2{
-      font-size: 2rem;
-      font-weight:600;
+      font-size: 1.6rem;
+      font-weight:800;
 
   
     }
@@ -587,13 +591,14 @@
   .contSec{
     padding-bottom: 2rem;
     h3{
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding-bottom: .5re;
+      font-weight: 600;
     }
     p{
       font-size: 1.2rem;
       font-weight:300;
-      line-height: 1.5;
+      line-height: 1.1;
     }
   
   }
@@ -768,7 +773,7 @@
   }
   .stilish-header{
     p{
-      font-size: .8rem;
+      font-size: 1rem;
       max-width:100%;
       font-weight: 300;
       line-height: 3vh;
@@ -777,14 +782,14 @@
     }
     h1{
    
-      font-size: 1.5rem;
-      font-weight:450;
+      font-size: 1.6rem;
+      font-weight:600;
       word-spacing: 5px;
   
     }
   }
   .s-box{
-    width: 70%;
+    width: 80%;
     border: 1px solid rgba(163, 161, 161, 0.442);
     img{
       width: 100%;
@@ -799,7 +804,7 @@
       padding-bottom: .5rem;
     }
     p{
-      font-size:2vw;
+      font-size:1rem;
       line-height:1.2rem;
       font-weight: 300;
       padding-bottom: 1rem;
@@ -954,12 +959,12 @@ button:hover {
   .form-header{
     padding-top: 6rem;
     h1{
-      font-size: 2rem;
-      font-weight: 600;
+      font-size: 1.6rem;
+      font-weight: 800;
     }
     p{
-      font-size: 2.5vw;
-      padding: 2rem 3rem 0rem 3rem;
+      font-size: 1rem;
+      padding: 2rem 2rem 0rem 2rem;
       font-weight: 350;
     }
   }
@@ -975,7 +980,7 @@ button:hover {
   }
 
   .form-container{
-    transform: scale(.5);
+    transform: scale(.57);
     align-items: center;
 
   }
